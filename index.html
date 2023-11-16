@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepukla</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="block-wrapper">
+        <h1>Kepykla</h1>
+    </header>
+     <div class="info-wrapper block-wrapper">
+        <h2>Pradine informacija</h2>
+        <div class="input-wrapper">
+            <div class="conatainer">
+                <label  for="employee-count">Darbuotoju skaicius</label>
+                <iconify-icon id="emplyee-info" icon="fxemoji:whitequestionmark"></iconify-icon>
+                <div class="modal" id="dezute1">
+                    <p>Siame laukelyje suveskit duomenis, kiek kepykloj dirba darbuotoju</p>  
+                </div>
+            </div>
+            <input type="number" min="0" step="1" value="0" id="employee-count">
+            <span class="error">Darbuotoju skaicius negali buti neigiamas</span>
+        </div>
+        <div class="input-wrapper">
+            <div class="container">
+                <label for="loaves-per-employee">Duonos kepalu per diena(1darbuotojas)</label>
+                <iconify-icon id="loaf-info" icon="fxemoji:whitequestionmark"></iconify-icon>
+                <div class="modal" id="dezute2">
+                    <p>Siame laukelyje suveskit duomenis, kiek kepalu per diena iskepa vienas darbuotojas</p>  
+                </div>
+            </div>
+            <input type="number" min="0" step="1" value="0" id="loaves-per-employee">
+            <span class="error">Duonos kepalu/perdiena skaicius negali buti neigiamas</span>
+        </div>
+        <div class="input-wrapper">
+            <div class="container">
+                <label for="order-count">Duonos kepalu per diena</label>
+                <iconify-icon id="order-info" icon="fxemoji:whitequestionmark"></iconify-icon>
+                <div class="modal" id="dezute3">
+                    <p>Siame laukelyje suveskit duomenis, kiek kepalu duonos uzsake klijentas</p>  
+                </div>
+            </div>
+            <input type="number" min="0" step="1" value="0" id="order-count">
+            <span class="error">Uzsakymu skaicius negali buti neigiamas</span>
+        </div>
+        <button id="calculate">Skaiciuoti</button>
+        <button id="reset">Is naujo</button>
+     </div>
+     <div class="calc-wrapper block-wrapper">
+        <h2>Skaiciavimai</h2>
+        <div id="results">
+            <p>Kol kas, nieko nera.</p>
+        </div>
+     </div>
+</body>
+</html>
